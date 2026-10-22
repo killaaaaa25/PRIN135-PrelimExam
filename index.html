@@ -1,115 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PRIN135-PrelimExam</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRIN135 - Midterm Exam | Portfolio</title>
+    <!-- Task #1: Add the external CSS style.css -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body id="top">
 
-<header>
-<nav>
-<a href="#skills">Skills</a> |
-<a href="#education">Education</a> |
-<a href="#awards">Awards and Achievements</a> |
-<a href="#contact">Contact Me</a>
-</nav>
+    <!-- ---------- Navigation ---------- -->
+    <nav class="site-nav">
+        <div class="nav-inner">
+            <a href="#top" class="nav-brand">Portfolio</a>
+            <ul class="nav-links">
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-<br>
+    <!-- ---------- Header ---------- -->
+    <header class="site-header">
+        <div class="header-inner clearfix">
 
-<img src="ppic.png" alt="Profile Picture" width="150" height="150">
-<h1>Manuel Joaquin Ocampo</h1>
-<p>Information Technology Student</p>
-<p><u>ocampo2434162@mls.ceu.edu.ph </u>| 09496211234 | <a href="https://github.com/killaaaaa25">https://github.com/killaaaaa25</a></p>
-<p>I am a Third year Information Technology student at Centro Escolar University. I would love to have more experience working in the industry to improve my skills. It is my dream to be a Full-Stack Developer.</p>
-</header>
+            <div class="photo-box">
+                <div class="photo-frame">
+                    <!-- Replace the image with your own profile picture -->
+                    <img class="photo" src="ppic.png" alt="Profile picture of Manuel Joaquin Ocampo">
+                </div>
+            </div>
 
-<main>
+            <div class="header-text">
+                <h1 class="name">Manuel Joaquin Ocampo</h1>
+                <ul class="header-links">
+                    <li><a href="tel:09496211234">09496211234</a></li>
+                    <li><a href="mailto:ocampo2434162@mls.ceu.edu.ph">ocampo2434162@mls.ceu.edu.ph</a></li>
+                    <li><a href="https://github.com/killaaaaa25" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </li>
+                </ul>
+                <p class="profile">
+                    I am a Third year Information Technology student at Centro Escolar University. I would love to have more experience working in the industry to improve my skills. It is my dream to be a Full-Stack Developer.
+                </p>
+            </div>
 
-<section id="skills">
-<h2><u>Skills</u></h2>
-<ul>
-<li>HTML</li>
-<li>CSS</li>
-<li>Java</li>
-<li>Python</li>
-</ul>
-</section>
+        </div>
+    </header>
 
-<section id="education">
-<h2><u>Education</u></h2>
-<ul>
-<li>Child's Joy Preschool 2010-2012</li>
-<li>Divine Light Academy 2012-2024</li>
-<li>Centro Escolar University 2024 - Present</li>
-</ul>
-</section>
+    <main class="wrapper">
 
-<section id="awards">
-<h2><u>Awards and Achievements</u></h2>
-<ul>
-<li>Dean's Lister 1st Sem 2024-2025, 2025-2026</li>
-<li>CSS NCII Certification</li>
-<li>Cisco Database SQL Certification</li>
-</ul>
-</section>
+        <!-- ---------- Skills ---------- -->
+        <section id="skills" class="card">
+            <h2>Skills</h2>
+            <ul class="skill-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Java</li>
+                <li>Python</li>
+            </ul>
+        </section>
 
-<section id="contact">
-<h2><u>Contact Me</u></h2>
+        <!-- ---------- Education ---------- -->
+        <section id="education" class="card">
+            <h2>Education</h2>
 
-<form>
-<div>
-<label for="name">Name:</label><br>
-<input
-type="text"
-id="name"
-name="name"
-maxlength="25"
-required>
-</div>
+            <div class="entry">
+                <span class="entry-year">2010 - 2012</span>
+                <h3>Preschool</h3>
+                <p class="entry-school">Child's Joy Preschool</p>
+            </div>
 
-<br>
+            <div class="entry">
+                <span class="entry-year">2012 - 2024</span>
+                <h3>Primary & Secondary Education</h3>
+                <p class="entry-school">Divine Light Academy</p>
+            </div>
 
-<div>
-<label for="email">Email:</label><br>
-<input
-type="email"
-id="email"
-name="email"
-maxlength="25"
-required>
-</div>
+            <div class="entry">
+                <span class="entry-year">2024 - Present</span>
+                <h3>Bachelor of Science in Information Technology</h3>
+                <p class="entry-school">Centro Escolar University</p>
+            </div>
+            
 
-<br>
+        </section>
 
-<div>
-<label for="message">Message:</label><br>
-<textarea
-id="message"
-name="message"
-maxlength="255"
-required></textarea>
-</div>
+        <!-- ---------- Achievements ---------- -->
+        <section id="achievements" class="card">
+            <h2>Awards and Achievements</h2>
+            <ul class="achievement-list">
+                <li>
+                    <strong>Dean's Lister</strong> 1st Sem 2024-2025, 2nd Sem 2025-2026
+                </li>
+                <li>
+                    <strong>CSS NCII Certification</strong>
+                </li>
+                <li>
+                    <strong>Cisco Database SQL Certification</strong>
+                </li>
+            </ul>
+        </section>
 
-<br>
+        <!-- ---------- Contact me ---------- -->
+        <section id="contact" class="card">
+            <h2>Contact Me</h2>
+            <form class="contact-form" action="#" method="post">
+                <div class="form-row clearfix">
+                    <div class="field field-left">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                    </div>
 
-<button type="submit">Contact Me</button> 
+                    <div class="field field-right">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                    </div>
+                </div>
 
-</form>
-</section>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
 
-</main>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
 
-<footer>
-<nav>
-    <br>
-<a href="#skills">Skills</a> |
-<a href="#education">Education</a> |
-<a href="#awards">Awards and Achievements</a> |
-<a href="#contact">Contact Me</a>
-</nav>
-</footer>
+    </main>
+
+    <!-- ---------- Footer ---------- -->
+    <footer class="site-footer">
+        <p class="footer-name">Manuel Joaquin Ocampo &middot; Portfolio</p>
+        <a href="#top" class="back-to-top">Back to top &uarr;</a>
+    </footer>
 
 </body>
+
 </html>
